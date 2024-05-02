@@ -1,9 +1,6 @@
 {
   "navigationFallback": {
-    "rewrite": "/index.html",
+    "rewrite": "/Index.html",
     "exclude": [ "/images/*", "/styles/*" ]
-  },
-  {
-  "route": "/Index.html"
-}
+  }
 }
