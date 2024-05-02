@@ -4,6 +4,6 @@
     "exclude": [ "/images/*", "/styles/*" ]
   },
   {
-  "route": "/Index.html",
+  "route": "/Index.html"
 }
 }
