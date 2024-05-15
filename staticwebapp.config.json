@@ -1,6 +1,6 @@
 {
   "navigationFallback": {
-    "rewrite": "/Index.html",
+    "rewrite": "/home.html",
     "exclude": [ "/images/*", "/styles/*" ]
   }
 }
