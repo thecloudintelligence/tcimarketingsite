@@ -1,17 +1,42 @@
-# HTML
-# Archive your static HTML project and save it with the build record.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- main
+  branches:
+    include:
+      - main   # or your branch
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
+
+variables:
+- group: StaticWebAppVars
 
 steps:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
-- task: PublishBuildArtifacts@1
+  - checkout: self
+    displayName: 'Checkout repository'
+    clean: true
+
+  # Optional: install Node if you have any build step; for pure HTML you can skip
+  # - task: NodeTool@0
+  #   inputs:
+  #     versionSpec: '18.x'
+  #   displayName: 'Install Node.js'
+
+  - script: |
+      echo "Listing files to deploy:"
+      ls -R
+    displayName: 'Inspect repository'
+
+  - task: Bash@3
+    displayName: 'Install SWA CLI and deploy'
+    inputs:
+      targetType: 'inline'
+      script: |
+        npm install -g @azure/static-web-apps-cli
+
+        # For a pure HTML site in repo root:
+        swa deploy \
+          --app-name "$STATIC_WEB_APP_NAME" \
+          --env "production" \
+          --app-location "." \
+          --deployment-token "$(44880e7dcbcf347d8e6ed868e872c1a7b9e1a38adfa1adeff7d79e84601a04505-a68d6100-4daf-4114-8c82-4a2d5dfd199300f214209)"
+    env:
+      STATIC_WEB_APP_NAME: 'tcimarketingsite'  # your Static Web App name
