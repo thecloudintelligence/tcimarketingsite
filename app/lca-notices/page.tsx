@@ -45,6 +45,30 @@ export default function LCANoticesPage() {
             <ul className="lca-notices-list">
               <li className="lca-notice-item">
                 <a
+                  href="/lca-notices-folder/kGc2S3plhhrDj9U6P3NEwQm4piY6HJhFOBw7bF0IHP0i2aoy/2026/02/261017-234598.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="lca-notice-link"
+                >
+                  <div className="lca-notice-info">
+                    <div className="lca-notice-icon">
+                      <Image
+                        src="/img/PDF_file_icon.svg"
+                        alt="PDF"
+                        width={28}
+                        height={28}
+                        style={{ width: '28px', height: '28px' }}
+                      />
+                    </div>
+                    <div className="lca-notice-text">
+                      <span className="lca-notice-name">LCA Notice - 261017-234598</span>
+                    </div>
+                  </div>
+                  <Image src="/img/arrow-up-right.svg" alt="open" className="lca-notice-arrow" width={24} height={24} />
+                </a>
+              </li>
+              <li className="lca-notice-item">
+                <a
                   href="/lca-notices-folder/kGc2S3plhhrDj9U6P3NEwQm4piY6HJhFOBw7bF0IHP0i2aoy/2026/01/260113-220989.pdf"
                   target="_blank"
                   rel="noopener noreferrer"

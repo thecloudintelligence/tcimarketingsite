@@ -43,8 +43,10 @@ export default function Scripts() {
       const hamBurger = document.querySelector('.homepage') as HTMLElement
 
       const scrollThreshold = 50
+      const isTrainingsPage = window.location.pathname === '/trainings' || window.location.pathname === '/trainings/'
+      const shouldUseScrolledStyle = isTrainingsPage || window.scrollY > scrollThreshold
 
-      if (window.scrollY > scrollThreshold) {
+      if (shouldUseScrolledStyle) {
         if (stickyBtn) stickyBtn.style.display = 'block'
         navbar?.classList.add('scrolled')
         if (navLogo) navLogo.src = '/img/tci-logo-color.svg'
@@ -75,6 +77,8 @@ export default function Scripts() {
       }
     }
 
+    // Apply correct navbar state immediately on page load
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
 
     return () => {
