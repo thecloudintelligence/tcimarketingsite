@@ -45,7 +45,7 @@ export default function LCANoticesPage() {
             <ul className="lca-notices-list">
               <li className="lca-notice-item">
                 <a
-                  href="/lca-notices-folder/kGc2S3plhhrDj9U6P3NEwQm4piY6HJhFOBw7bF0IHP0i2aoy/2026/02/261017-234598.pdf"
+                  href="https://midocfileserver.blob.core.windows.net/tcimarketing/m0kpMP1NL78XbBtpDtmX39L24cK7h6en8hhRsJHtpagogsz/2026/02/261017-234598.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="lca-notice-link"
@@ -69,7 +69,7 @@ export default function LCANoticesPage() {
               </li>
               <li className="lca-notice-item">
                 <a
-                  href="/lca-notices-folder/kGc2S3plhhrDj9U6P3NEwQm4piY6HJhFOBw7bF0IHP0i2aoy/2026/01/260113-220989.pdf"
+                  href="https://midocfileserver.blob.core.windows.net/tcimarketing/m0kpMP1NL78XbBtpDtmX39L24cK7h6en8hhRsJHtpagogsz/2026/01/260113-220989.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="lca-notice-link"
