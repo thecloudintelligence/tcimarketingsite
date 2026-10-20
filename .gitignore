@@ -19,6 +19,9 @@
 .DS_Store
 *.pem
 
+# Legacy static-site image folder (Next.js uses /public/img)
+/img/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
