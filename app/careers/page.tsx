@@ -426,6 +426,96 @@ export default function CareersPage() {
                 </div>
               </div>
             </div>
+
+            {/* Third Job Listing - Information Security Analyst */}
+            <div className="div-33" style={{ marginTop: '80px' }}>
+              <div className="div-34" style={{ display: 'flex', gap: '60px', flexWrap: 'wrap' }}>
+                <div style={{ flex: '1', minWidth: '300px' }}>
+                  <h3 style={{ color: '#eaeef9', fontSize: '32px', fontWeight: '600', marginBottom: '12px', letterSpacing: '-1.28px' }}>
+                    Information Security Analyst
+                  </h3>
+                  <p style={{ color: '#d0d8e8', fontSize: '18px', marginBottom: '20px' }}>Full-time Position</p>
+                  <p style={{ color: '#d0d8e8', fontSize: '16px', lineHeight: '1.6', marginBottom: '24px' }}>
+                    Responsible for simulating cyberattacks on systems, networks, and applications to identify vulnerabilities before malicious actors can exploit them.
+                  </p>
+                  <div style={{ marginTop: '24px' }}>
+                    {[
+                      ['Security Testing & Assessments', 'Conduct penetration testing on web applications, network and infrastructure, Linux and Windows desktops/servers, APIs, cloud environments, and mobile apps. Perform vulnerability assessments using automated tools and manual techniques, and simulate real-world cyberattacks to evaluate system resilience.'],
+                      ['Exploitation & Analysis', 'Identify and exploit weaknesses in systems and applications; analyze security flaws, misconfigurations, and insecure code; test authentication systems, access controls, and network defenses; identify exploitable credentials and attack paths.'],
+                      ['Reporting & Documentation', 'Document all findings, methodologies, and evidence of vulnerabilities; prepare detailed technical and executive reports; communicate risks and remediation recommendations to stakeholders.'],
+                      ['Remediation & Security Improvement', 'Recommend solutions to address security gaps, work with development and infrastructure teams to implement fixes, and validate remediation through re-testing and follow-ups.'],
+                      ['Tooling & Automation', 'Use security tools such as Metasploit, Nmap, Burp Suite, Kali, vulnerability scanners, and Pentera Console and Surface; develop scripts (Python, Bash) to automate testing; design custom exploits and testing methodologies.'],
+                      ['Continuous Learning & Threat Research', 'Stay current on emerging threats, exploitation techniques, and security vulnerabilities (OWASP, CVEs); research new attack vectors and penetration testing techniques.'],
+                    ].map(([title, body]) => (
+                      <div key={title} style={{ display: 'flex', gap: '16px', marginBottom: '20px', alignItems: 'flex-start' }}>
+                        <div style={{
+                          width: '8px',
+                          height: '8px',
+                          borderRadius: '50%',
+                          background: 'linear-gradient(135deg, #2a57be 0%, #4a7cff 100%)',
+                          flexShrink: 0,
+                          marginTop: '8px',
+                          boxShadow: '0 0 8px rgba(42, 87, 190, 0.5)'
+                        }}></div>
+                        <p style={{ color: '#d0d8e8', fontSize: '18px', lineHeight: '1.6', margin: 0 }}>
+                          <strong style={{ color: '#eaeef9' }}>{title}:</strong> {body}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ flex: '1', minWidth: '300px' }}>
+                  <h3 style={{ color: '#eaeef9', fontSize: '32px', fontWeight: '600', marginBottom: '12px', letterSpacing: '-1.28px' }}>
+                    Requirements
+                  </h3>
+                  <p style={{ color: '#d0d8e8', fontSize: '18px', marginBottom: '20px' }}>What We&apos;re Looking For</p>
+                  <p style={{ color: '#d0d8e8', fontSize: '16px', lineHeight: '1.6', marginBottom: '24px' }}>
+                    We seek experienced security professionals with strong expertise in offensive security, threat detection, and incident investigation.
+                  </p>
+                  <div style={{ marginTop: '24px' }}>
+                    {[
+                      'Hands-on experience with SIEM platforms such as Splunk, Microsoft Sentinel, QRadar, or Elastic',
+                      'Strong knowledge of Threat Modeling methodologies and attack path analysis',
+                      'Experience creating and tuning correlation rules, analytics, alerts, and dashboards',
+                      'Hands-on experience with EDR/XDR solutions such as CrowdStrike, Microsoft Defender, SentinelOne, or Carbon Black',
+                      'Experience analyzing security logs from endpoints, networks, cloud platforms, and identity systems',
+                      'Experience with incident investigation and security monitoring',
+                    ].map((item) => (
+                      <div key={item} style={{ display: 'flex', gap: '16px', marginBottom: '20px', alignItems: 'flex-start' }}>
+                        <div style={{
+                          width: '8px',
+                          height: '8px',
+                          borderRadius: '50%',
+                          background: 'linear-gradient(135deg, #2a57be 0%, #4a7cff 100%)',
+                          flexShrink: 0,
+                          marginTop: '8px',
+                          boxShadow: '0 0 8px rgba(42, 87, 190, 0.5)'
+                        }}></div>
+                        <p style={{ color: '#d0d8e8', fontSize: '18px', lineHeight: '1.6', margin: 0 }}>
+                          {item}
+                        </p>
+                      </div>
+                    ))}
+                    <a
+                      href="mailto:info@thecloudintelligence.com?subject=Application%20-%20Information%20Security%20Analyst"
+                      style={{
+                        display: 'inline-block',
+                        marginTop: '8px',
+                        background: '#265bb7',
+                        color: '#ffffff',
+                        padding: '12px 28px',
+                        borderRadius: '8px',
+                        fontWeight: 600,
+                        fontSize: '16px',
+                        textDecoration: 'none',
+                      }}
+                    >
+                      Apply Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
