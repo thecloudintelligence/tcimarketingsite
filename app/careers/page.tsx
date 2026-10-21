@@ -496,22 +496,6 @@ export default function CareersPage() {
                         </p>
                       </div>
                     ))}
-                    <a
-                      href="mailto:info@thecloudintelligence.com?subject=Application%20-%20Information%20Security%20Analyst"
-                      style={{
-                        display: 'inline-block',
-                        marginTop: '8px',
-                        background: '#265bb7',
-                        color: '#ffffff',
-                        padding: '12px 28px',
-                        borderRadius: '8px',
-                        fontWeight: 600,
-                        fontSize: '16px',
-                        textDecoration: 'none',
-                      }}
-                    >
-                      Apply Now
-                    </a>
                   </div>
                 </div>
               </div>
